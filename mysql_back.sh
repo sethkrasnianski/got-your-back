@@ -1,12 +1,22 @@
 #!/bin/bash
 source mysql.config
 
+latest=1
+
 for path in databases/*
 do
   if [ -f $path ];
   then
     version=${path//[!0-9]}
-    echo $version
+    
+    if (( version > latest ))
+    then
+      latest=$version
+    fi
+    
+    echo $latest
+
+    #echo $version
     #echo $((version+1))
   else
     echo "nope"
