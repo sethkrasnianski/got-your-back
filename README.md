@@ -18,7 +18,7 @@ It asks for your mysql password, enter it.
 
 3.) Set the working directory's database in `mysql.config`
 
-`db="dbname"` esc + `:wq`
+`db="dbname"` + `esc` + `:wq`
 
 
 4.) Before every push to staging, run ...
