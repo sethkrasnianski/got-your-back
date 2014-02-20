@@ -1,4 +1,5 @@
 #!/bin/bash
+source mysql.config
 
 latest=1
 sql="$db"
