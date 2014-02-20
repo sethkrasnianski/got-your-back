@@ -2,6 +2,7 @@
 source mysql.config
 
 latest=1
+sql="$db"
 
 for path in databases/*
 do
@@ -14,16 +15,13 @@ do
       latest=$version
     fi
     
-    echo $latest
-
-    #echo $version
-    #echo $((version+1))
+    sql="$db$((latest+1)).sql"
   else
-    echo "nope"
+    sql="$db$latest.sql"
   fi
 done
 
-#mysql -u $user -p$pass $db << EOF
-#use mysql;
-#show tables;
-#EOF
+echo $sql
+
+cd databases;
+mysqldump --login-path=local  $db > $sql;
