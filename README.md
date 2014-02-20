@@ -1,4 +1,15 @@
-git-mysql
+
+Got Your Back
 =========
 
-Version control for mysql. Future git integration
+Got your backup? Version control for mysql. Future git integration.
+
+1. Set mysql_config_editor
+.. `mysql_config_editor set --login-path=local --host=localhost --user=username --password`
+.. It asks for your mysql password, enter it.
+
+2. Make script executable
+.. `chmod 755 gotyourback.sh`
+
+3. Before every push to staging, run ...
+.. `./gotyourback.sh`
