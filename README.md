@@ -2,7 +2,7 @@
 Got Your Back
 =========
 
-Got your backup? Version control for mysql. Future git integration.
+###Got your backup? Version control for mysql. Future git integration.
 
 1.) Set mysql_config_editor
 
