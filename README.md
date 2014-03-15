@@ -20,6 +20,9 @@ It asks for your mysql password, enter it.
 `db="dbname"` + `esc` + `:wq`
 
 
-4.) Before every push to staging, run ...
+4.) Create directory `databases` in directory relative to shell script.
+
+
+5.) Before every push to staging, run ...
 
 `$ ./gotyourback.sh`
