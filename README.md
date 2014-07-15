@@ -3,7 +3,7 @@ Got Your Back
 
 ###Got your backup? Version control for mysql. Future git integration.
 
-1.) Set mysql_config_editor in terminal
+1.) Set mysql_config_editor in terminal (MySQL version 5.6.6 or greater required)
 
 `$ mysql_config_editor set --login-path=local --host=localhost --user=username --password`
 
