@@ -17,7 +17,7 @@ It asks for your mysql password, enter it.
 
 3.) Set the working directory's database in `mysql.config`
 
-`db="dbname"` + `esc` + `:wq`
+`db="dbname"`
 
 
 4.) Create directory `databases` in directory relative to shell script.
